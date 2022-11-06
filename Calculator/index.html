@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <form name = "form"> 
+             <input type="text" name="name" placeholder="0" id="eee"> <br> <!--for textbox -->
+             <input type ="button" value="1" onclick="form.name.value+=1">
+             <input type ="button" value="2" onclick="form.name.value+=2">
+             <input type ="button" value="3" onclick="form.name.value+=3">
+             <input type ="button" value="+" onclick="add()"><br>
+             <input type ="button" value="4" onclick="form.name.value+=4">
+             <input type ="button" value="5" onclick="form.name.value+=5">
+             <input type ="button" value="6" onclick="form.name.value+=6">
+             <input type ="button" value="-" onclick="subtract()"><br>
+             <input type ="button" value="7" onclick="form.name.value+=7">
+             <input type ="button" value="8" onclick="form.name.value+=8">
+             <input type ="button" value="9" onclick="form.name.value+=9">
+             <input type ="button" value="/" onclick="divide()"><br>
+             <input type ="button" value="c" onclick="form.name.value=''">
+             <input type ="button" value="0" onclick="form.name.value+=0">
+             <input type ="button" value="=" onclick="form.name.value=eval(form.name.value)">
+             <input type ="button" value="x" onclick="multiply()"><br>
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
